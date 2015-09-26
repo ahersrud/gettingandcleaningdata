@@ -1,4 +1,6 @@
 # gettingandcleaningdata
+Please see CoodBook.md for a description on how to generate the desired data as well as the data definitions, etc. 
+
 # File Descriptions
 getData.R : This R script can be used to download the raw data file and stores it in the data/raw directory as samsung.zip
 loadData.R : This R script is used to load the raw data files into R for processing
