@@ -1,5 +1,5 @@
-library(data.table)
-library(dplyr)
+library("data.table")
+library("dplyr")
 
 #load the data
 source("loadData.R")
@@ -56,6 +56,7 @@ for (i in 1:6 ) {
 # From the data set created in the previous step, 
 # creates a second, independent tidy data set with the average of 
 # each variable for each activity and each subject.
+DT <- data.table(mergedData)
 averageValuesByPersonAndActivity <- DT[,lapply(.SD, mean), by = c("SubjectID", "Activity")]
 
 # Rename the columns so that they include the word average
