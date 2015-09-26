@@ -1,9 +1,11 @@
 TRANSFORMATIONS
 =======
 Below I describe the steps that I took to transform the data.  You can reproduce my work by following these instructions.
+
   1. source the getData.R file to get the initial data set. 
   2. at the command line, enter the data/raw directory and run: unzip samsung.zip
   3. source the run_alysis.R file which does the following:
+  
      * Merges the training and the test sets to create one data set.
      * Extracts only the measurements on the mean and standard deviation for each measurement. 
      * Uses descriptive activity names to name the activities in the data set
@@ -17,6 +19,7 @@ DATA DICTIONARY
 
 SubjectID : An integer identifying the subject whom performed the activity                                  
 Activity : The String representing the activity being performed during the measurment. One of the following: 
+
   * WALKING
   * WALKING_UPSTAIRS
   * WALKING_DOWNSTAIRS
@@ -25,6 +28,7 @@ Activity : The String representing the activity being performed during the measu
   * LAYING
 
 The following measurements were taken and then averaged for each subject and activity. Each value is a floating point number:
+
   * average.tBodyAcc.mean.X                    
   * average.tBodyAcc.mean.Y                    
   * average.tBodyAcc.mean.Z                    
